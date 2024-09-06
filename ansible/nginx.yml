@@ -1,0 +1,47 @@
+---
+ 
+- hosts: all
+  become: yes
+  vars:
+    server_name: "{{ ansible_default_ipv4.address }}"
+    document_root: /var/www/mywebsite/html
+    app_root: /home/evgenii/www/staticfail/html
+ 
+  tasks:
+    - name: Обновить кэш apt и установить NGINX
+      apt:
+        name: nginx
+        state: latest
+        update_cache: yes
+ 
+    - name: Копировать файлы сайта на сервер
+      copy:
+        src: "{{ app_root }}/"
+        dest: "{{ document_root }}/"
+        mode: preserve
+ 
+    - name: Применить шаблон конфигурации NGINX
+      template:
+        src: /home/evgenii/ansible/nginx.conf.j2
+        dest: /etc/nginx/sites-available/default
+      notify: Перезапустить NGINX
+ 
+    - name: Включить новый сайт
+      file:
+        src: /etc/nginx/sites-available/default
+        dest: /etc/nginx/sites-enabled/default
+        state: link
+      notify: Перезапустить NGINX
+ 
+    - name: Разрешить доступ к TCP порту 80
+      ufw:
+        rule: allow
+        port: '80'
+        proto: tcp
+ 
+  handlers:
+    - name: Перезапустить NGINX
+      service:
+        name: nginx
+        state: restarted
+...
