@@ -1,0 +1,20 @@
+---
+- hosts: kibana-server
+  become: yes
+  tasks:
+    - name: Copy Kibana package to remote server
+      copy:
+        src: /home/evgenii/kibana-8.2.3-amd64.deb
+        dest: /tmp/kibana-8.2.3-amd64.deb
+ 
+    - name: Install Kibana
+      apt:
+        deb: /tmp/kibana-8.2.3-amd64.deb
+        state: present
+ 
+    - name: Enable Kibana service
+      systemd:
+        name: kibana
+        enabled: yes
+        state: started
+...
