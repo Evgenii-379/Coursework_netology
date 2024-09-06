@@ -1,0 +1,21 @@
+---
+- name: Установка Filebeat на сервер vm1, vm2
+  hosts: all
+  become: yes
+  tasks:
+    - name: Копирование пакета Filebeat на удалённый сервер
+      copy:
+        src: /home/evgenii/filebeat-8.2.3-amd64.deb
+        dest: /tmp/filebeat-8.2.3-amd64.deb
+ 
+    - name: Установка Filebeat
+      apt:
+        deb: /tmp/filebeat-8.2.3-amd64.deb
+#        update_cache: yes
+ 
+    - name: Запуск и включение Filebeat
+      systemd:
+        name: filebeat
+        state: started
+        enabled: yes
+...
