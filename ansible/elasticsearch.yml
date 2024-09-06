@@ -1,0 +1,24 @@
+---
+- hosts: all
+  tasks:
+    - name: Copy Elasticsearch deb package
+      become: yes
+      copy:
+        src: /home/evgenii/elasticsearch-8.2.3-amd64.deb
+        dest: /tmp/elasticsearch-8.2.3-amd64.deb
+        owner: root
+        group: root
+        mode: '0644'
+ 
+    - name: Install Elasticsearch
+      apt:
+        deb: /tmp/elasticsearch-8.2.3-amd64.deb
+        state: present
+      become: yes
+ 
+    - name: Start Elasticsearch
+      systemd:
+        name: elasticsearch
+        state: started
+        enabled: yes
+...
