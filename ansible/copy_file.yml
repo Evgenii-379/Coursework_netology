@@ -1,0 +1,8 @@
+- name: Копирование файла на удалённый сервер
+  hosts: bastion
+  tasks:
+    - name: Копировать файл id_rsa
+      ansible.builtin.copy:
+        src: /home/evgenii/.ssh/id_rsa
+        dest: /home/evgenii_10/.ssh/id_rsa
+        mode: '0600'  # Устанавливаем права доступа к файлу
