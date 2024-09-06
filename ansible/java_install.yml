@@ -1,0 +1,27 @@
+---
+- name: Install Java on Ubuntu
+  hosts: all
+  become: true
+ 
+  tasks:
+    - name: Add Oracle Java PPA
+      apt_repository:
+        repo: 'ppa:openjdk-r/ppa'
+        state: present
+ 
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+ 
+    - name: Install OpenJDK 8
+      apt:
+        name: openjdk-8-jdk
+        state: present
+ 
+    - name: Set default Java version
+      alternatives:
+        name: java
+        path: /usr/lib/jvm/java-8-openjdk-amd64/bin/java
+        priority: 1
+#        auto: yes
+...
