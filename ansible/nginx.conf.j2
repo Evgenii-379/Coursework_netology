@@ -1,0 +1,11 @@
+server {
+    listen 80;
+    server_name vm-1:vm-2;                #  домен или IP
+ 
+    root /var/www/mywebsite/html;            # Путь к статичным файлам
+    index index.html index.htm;              # Главный файл
+ 
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
