@@ -155,12 +155,24 @@ http://host/zabbix
 
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20113433.png)
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20114248.png)
-- ![scrinshot](https://github.com/
-- ![scrinshot](https://github.com/
-- ![scrinshot](https://github.com/
-- ![scrinshot](https://github.com/
 
+Состояние балансировщика
 
+- ![scrinshot](https://github.com/ Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20113641.png)
+
+ При введении в браузер публичного адреса балансировщика открывается сайт (статические файлы сайта на vm-1, vm-2)
+
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20113546.png)
+
+Проверка статических файлов через терминал
+
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20132223.png)
+
+На сервере bastion устанавливаю ansible и настриваю инвентарный файл ansible
+
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20121938.png)
+
+Через bastion, подключаюсь к виртуальным машинам по их внутренним IP адресам, для настройки конфигурационных файлов:
 
 Настройка конфигурационных файлов ELK и filebeat на серверах
 
@@ -169,15 +181,32 @@ http://host/zabbix
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-06%20005944.png)
 - ![scrinshot](https://github.com/ Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-06%20005927.png)
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-06%20005907.png)
+- ![scrinshot](https://github.com/ Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20125047.png)
+- ![scrinshot](https://github.com/ Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20133245.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20125118.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-08-30%20005321.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-06%20010130.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-08-24%20000559.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-08-24%20001548.png)
 
 Настройка конфигурационных файлов zabbix и zabbix-agent
 
-- ![scrinshot](https://github.com/
-- ![scrinshot](https://github.com/
-- ![scrinshot](https://github.com/
-- ![scrinshot](https://github.com/
-- ![scrinshot](https://github.com/
-- ![scrinshot](https://github.com/
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20165845.png)
+- ![scrinshot](https://github.com/ Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-06%20012750.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-06%20013256.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20132655.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20132626.png)
+
+Создание snapshot дисков всех ВМ
+В консоле yandex cloud настраиваю снимки дисков всех ВМ с ограниченным временем жизни в 7 дней. Сами снимки настроенны на ежедневное копирование
+
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20002428.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-05%20130650.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-05%20130704.png)
+
+Снимки дисков на следующий день
+
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20001023.png)
 
 
 
