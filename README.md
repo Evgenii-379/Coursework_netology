@@ -99,6 +99,46 @@ zabbix-server
 Устанавливаю через ansible, java на vm elastic-server, kibana-server 
 
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-08-22%20172826.png)
-- ![scrinshot](https://github.com/
-- ![scrinshot](https://github.com/
+
+Использую ansible для установки filebeat на серврера vm-1, vm-2
+
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-08-24%20193349.png)
+
+Установка zabbix на сервере:
+
+Установка PostgreSQL:
+sudo apt install postgresql
+ 
+Установка репозиторий Zabbix:
+# wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-4+debian11_all.deb
+# dpkg -i zabbix-release_6.0-4+debian11_all.deb
+# apt update
+ 
+Установка Zabbix сервера, веб-интерфейса и агента:
+# apt install zabbix-server-pgsql zabbix-frontend-php php7.4-pgsql zabbix-apache-conf zabbix-sql-scripts zabbix-agent
+ 
+Создаём базу данных:
+# sudo -u postgres createuser --pwprompt zabbix
+# sudo -u postgres createdb -O zabbix zabbix
+ 
+На хосте Zabbix сервера импортируйте начальную схему и данные. Вам будет предложено ввести недавно созданный пароль:
+# zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
+ 
+Настраиваем базу данных для Zabbix сервера
+Отредактируем файл /etc/zabbix/zabbix_server.conf:
+DBPassword=password
+ 
+Запускаем процессы Zabbix сервера и агента
+Запускаем процессы Zabbix сервера и агента и настраиваем их запуск при загрузке ОС.
+ 
+Открываем веб-страницу Zabbix:
+http://host/zabbix
+
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-08-21%20012544.png)
+
+
+
+
+
+
 
