@@ -83,7 +83,7 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 
   Виртуальные машины vm-1 и vm-2 располагаются в разных зонах
 
-- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20115605.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20224738.png)
 
 Затем через ansible устанавливаю на сервера vm-1, vm-2 nginx и статические файлы сайта:
 
@@ -155,7 +155,8 @@ http://host/zabbix
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20114548.png)
 
 С применением terraform настраиваю Security Groups соответствующих сервисов на входящий трафик только к нужным портам
-
+ 
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20115605.png)
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20113433.png)
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20114248.png)
 
@@ -182,10 +183,10 @@ http://host/zabbix
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20124242.png)
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20124208.png)
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-06%20005944.png)
-- ![scrinshot](https://github.com/ Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-06%20005927.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-06%20005927.png)
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-06%20005907.png)
-- ![scrinshot](https://github.com/ Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20125047.png)
-- ![scrinshot](https://github.com/ Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20133245.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20125047.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20133245.png)
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20125118.png)
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-08-30%20005321.png)
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-06%20010130.png)
@@ -195,7 +196,7 @@ http://host/zabbix
 Настройка конфигурационных файлов zabbix и zabbix-agent
 
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20165845.png)
-- ![scrinshot](https://github.com/ Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-06%20012750.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-06%20012750.png)
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-06%20013256.png)
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20132655.png)
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20132626.png)
