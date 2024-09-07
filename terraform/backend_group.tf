@@ -14,8 +14,10 @@
     }
  
     healthcheck {
-      timeout  = "5s"
-      interval = "1s"
+      timeout  = "10s"
+      interval = "2s"
+      healthy_treshold = 10
+      unhealthy_threshold = 15
       http_healthcheck {
         path = "/"
      }
