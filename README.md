@@ -136,7 +136,28 @@ http://host/zabbix
 
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-08-21%20012544.png)
 
+ Устанавливаю на серверах vm-1,vm-2 репозиторий zabbix и устанавливаю zabbix-agent.
 
+Используя terraform настраиваю сеть в соответствии с заданием: 
+Развёрнут один VPC. Сервера web, Elasticsearch помещены в приватные подсети. Сервера Zabbix, Kibana, application load balancer определенны в публичную подсеть.
+
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20114200.png)
+
+При помощи системы terraform устанавливаю в созданной инфраструктуре: Target Group, Backend Group, HTTP router, Application load balancer
+В Target Group включаю две созданных ВМ vm-1, vm-2 
+
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20113746.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20113707.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20115130.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20114548.png)
+
+
+Настройка конфигурационных файлов ELK и filebeat на серверах
+
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20124242.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20124208.png)
+- ![scrinshot](https://github.com/
+- ![scrinshot](https://github.com/
 
 
 
