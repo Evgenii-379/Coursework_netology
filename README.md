@@ -161,7 +161,7 @@ http://host/zabbix
 
 Состояние балансировщика
 
-- ![scrinshot](https://github.com/ Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20113641.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20113641.png)
 
  При введении в браузер публичного адреса балансировщика открывается сайт (статические файлы сайта на vm-1, vm-2)
 
