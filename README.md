@@ -151,13 +151,34 @@ http://host/zabbix
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20115130.png)
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20114548.png)
 
+С применением terraform настраиваю Security Groups соответствующих сервисов на входящий трафик только к нужным портам
+
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20113433.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20114248.png)
+- ![scrinshot](https://github.com/
+- ![scrinshot](https://github.com/
+- ![scrinshot](https://github.com/
+- ![scrinshot](https://github.com/
+
+
 
 Настройка конфигурационных файлов ELK и filebeat на серверах
 
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20124242.png)
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20124208.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-06%20005944.png)
+- ![scrinshot](https://github.com/ Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-06%20005927.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-06%20005907.png)
+
+Настройка конфигурационных файлов zabbix и zabbix-agent
+
 - ![scrinshot](https://github.com/
 - ![scrinshot](https://github.com/
+- ![scrinshot](https://github.com/
+- ![scrinshot](https://github.com/
+- ![scrinshot](https://github.com/
+- ![scrinshot](https://github.com/
+
 
 
 
