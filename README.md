@@ -71,13 +71,13 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
  
  При помощи terraform в yandex облаке была развёрнута сеть из шести виртуальных машин, 5 из которых ubuntu 22.04 и одна vm Debian 11.
 Названия vm ubuntu 22.04:
-- vm-1 
-- vm-2
-- elstic-server
-- kibana-server
-- bastion
+- vm-1; 
+- vm-2;
+- elstic-server;
+- kibana-server;
+- bastion;
   vm Debian 11:
-- zabbix-server
+- zabbix-server;
 
   Виртуальные машины vm-1 и vm-2 располагаются в разных зонах
 
