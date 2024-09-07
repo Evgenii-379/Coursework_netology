@@ -80,20 +80,23 @@ bastion
 zabbix-server
 Виртуальные машины vm-1 и vm-2 располагаются в разных зонах
 
-- ![scrinshot](https://github.com//Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20115605.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20115605.png)
+
 Затем через ansible устанавливаю на сервера vm-1, vm-2 nginx и статические файлы сайта:
 
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-08-22%20142105.png)
+
 Настраиваю файл /etc/nginx/sites-available/
 
-- ![scrinshot](https://github.com//Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20165753.png)
+- ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20165753.png)
+
 С применением ansible устанавливаю на сервера приложения соответствующие их названиям:
 
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-08-24%20133109.png)
 
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-08-22%20164832.png)
 
-Устанавливаю через ansible, java на vm-1,vm-2 
+Устанавливаю через ansible, java на vm elastic-server, kibana-server 
 
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-08-22%20172826.png)
 - ![scrinshot](https://github.com/
