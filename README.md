@@ -76,9 +76,10 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 - elstic-server
 - kibana-server
 - bastion
-vm Debian 11:
+  vm Debian 11:
 - zabbix-server
-Виртуальные машины vm-1 и vm-2 располагаются в разных зонах
+
+  Виртуальные машины vm-1 и vm-2 располагаются в разных зонах
 
 - ![scrinshot](https://github.com/Evgenii-379/Coursework_netology/blob/main/Снимок%20экрана%202024-09-07%20115605.png)
 
